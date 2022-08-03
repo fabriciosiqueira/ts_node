@@ -1,10 +1,54 @@
+
+//Implementando desafio ORM O Liberal
+### Create
+POST http://localhost:3000/funcionarios
+Content-Type: application/json
+
+{
+    "nome": "Joao de Jesus",
+    "cpf": "98092030222",
+    "carteira_trabalho":"321651165165558889",
+    "setor": "Estoque",
+    "telefones":"[91981570513,91982192263,91982334455]"
+}
+
+### FindAll
+GET http://localhost:3000/funcionarios
+Content-Type: application/json
+
+### FindOne
+GET http://localhost:3000/funcionarios/1
+Content-Type: application/json
+
+
+### Update
+PUT http://localhost:3000/funcionarios/1
+Content-Type: application/json
+
+{
+    "nome": "Fabricio Borges de Jesus",
+    "cpf": "98092030211",
+    "carteira_trabalho":"121651165165165161",
+    "setor": "Escritório",
+    "telefones":"[91981570513,91982196666]"
+}
+
+### Delete
+DELETE http://localhost:3000/funcionarios/1
+Content-Type: application/json
+
+
+
+
+
+//Testando requisicao recem criada
 ### Create
 
 POST http://localhost:3000/users
 Content-Type: application/json
 
 {
-    "email": "teste2@example.com",
+    "email": "teste3@example.com",
     "nome": "Joao Davi de Jesus",
     "idade":8
 }
@@ -18,7 +62,7 @@ GET http://localhost:3000/users/1
 Content-Type: application/json
 
 
-### FindOne
+### Update
 PUT http://localhost:3000/users/1
 Content-Type: application/json
 
@@ -28,6 +72,6 @@ Content-Type: application/json
     "idade":34
 }
 
-### FindOne
+### Delete
 DELETE http://localhost:3000/users/1
 Content-Type: application/json
