@@ -1,0 +1,33 @@
+### Create
+
+POST http://localhost:3000/users
+Content-Type: application/json
+
+{
+    "email": "teste2@example.com",
+    "nome": "Joao Davi de Jesus",
+    "idade":8
+}
+
+### FindAll
+GET http://localhost:3000/users
+Content-Type: application/json
+
+### FindOne
+GET http://localhost:3000/users/1
+Content-Type: application/json
+
+
+### FindOne
+PUT http://localhost:3000/users/1
+Content-Type: application/json
+
+{
+    "email": "user@example.com",
+    "nome": "Fabricio Siqueira de Jesus",
+    "idade":34
+}
+
+### FindOne
+DELETE http://localhost:3000/users/1
+Content-Type: application/json
