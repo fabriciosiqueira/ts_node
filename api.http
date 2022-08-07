@@ -5,24 +5,24 @@ POST http://localhost:3000/funcionarios
 Content-Type: application/json
 
 {
-    "nome": "Joao de Jesus",
-    "cpf": "98092030222",
-    "carteira_trabalho":"321651165165558889",
+    "nome": "Joao",
+    "cpf": "980.920.302-22",
+    "carteira_trabalho":"777788",
     "setor": "Estoque",
-    "telefones":"[91981570513,91982192263,91982334455]"
+    "telefones":["(91) 98157-0513","(91) 98157-0513"]
 }
 
 ### FindAll
-GET http://localhost:3000/funcionarios
+GET http://localhost:4444/funcionarios
 Content-Type: application/json
 
 ### FindOne
-GET http://localhost:3000/funcionarios/1
+GET http://localhost:4444/funcionarios/7
 Content-Type: application/json
 
 
 ### Update
-PUT http://localhost:3000/funcionarios/1
+PUT http://localhost:4444/funcionarios/1
 Content-Type: application/json
 
 {
@@ -30,11 +30,11 @@ Content-Type: application/json
     "cpf": "98092030211",
     "carteira_trabalho":"121651165165165161",
     "setor": "Escritório",
-    "telefones":"[91981570513,91982196666]"
+    "telefones":["91981570513","91982196666"]
 }
 
 ### Delete
-DELETE http://localhost:3000/funcionarios/1
+DELETE http://localhost:4444/funcionarios/1
 Content-Type: application/json
 
 

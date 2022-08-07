@@ -1,6 +1,5 @@
 import  {DataTypes}  from "sequelize";
 import {db} from "../db";
-
 export const FuncionariosModels = db.define("funcionario", {
     id:{
         type: DataTypes.INTEGER,
